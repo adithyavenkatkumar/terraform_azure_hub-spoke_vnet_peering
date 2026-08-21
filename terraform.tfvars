@@ -1,5 +1,5 @@
 
-        
+
 # RESOURCE GROUPS
 hub_rg_name = "hub-rg"
 
@@ -8,7 +8,7 @@ web_rg_name = "spoke-web-rg"
 app_rg_name = "spoke-app-rg"
 
 
-        
+
 # AZURE REGIONS
 hub_location = "Central India"
 
@@ -17,7 +17,7 @@ web_location = "South India"
 app_location = "East Asia"
 
 
-        
+
 # VNET NAMES
 hub_vnet_name = "hub-vnet"
 
@@ -26,7 +26,7 @@ web_vnet_name = "web-vnet"
 app_vnet_name = "app-vnet"
 
 
-        
+
 # VNET ADDRESS SPACES
 hub_vnet_address_space = [
   "10.10.0.0/16"
@@ -41,14 +41,14 @@ app_vnet_address_space = [
 ]
 
 
-        
+
 # HUB SUBNETS
 gateway_subnet_prefix = "10.10.1.0/27"
 
 firewall_subnet_prefix = "10.10.2.0/26"
 
 
-        
+
 # SPOKE SUBNETS
 web_subnet_prefix = "10.20.1.0/24"
 

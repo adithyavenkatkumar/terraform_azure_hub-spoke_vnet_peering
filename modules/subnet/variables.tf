@@ -3,10 +3,10 @@ variable "subnets" {
   description = "Map of Azure subnets"
 
   type = map(object({
-    subnet_name         = string
-    resource_group_name = string
+    subnet_name          = string
+    resource_group_name  = string
     virtual_network_name = string
-    address_prefixes    = list(string)
+    address_prefixes     = list(string)
   }))
 }
 

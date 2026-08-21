@@ -1,5 +1,5 @@
 
-        
+
 # RESOURCE GROUP VARIABLES
 variable "hub_rg_name" {
   description = "Name of the Hub Resource Group"
@@ -17,7 +17,7 @@ variable "app_rg_name" {
 }
 
 
-        
+
 # LOCATION VARIABLES
 variable "hub_location" {
   description = "Azure region for the Hub"
@@ -35,7 +35,7 @@ variable "app_location" {
 }
 
 
-        
+
 # VNET NAME VARIABLES
 variable "hub_vnet_name" {
   description = "Name of the Hub VNet"
@@ -53,7 +53,7 @@ variable "app_vnet_name" {
 }
 
 
-        
+
 # VNET ADDRESS SPACE VARIABLES
 variable "hub_vnet_address_space" {
   description = "Address space for the Hub VNet"
@@ -71,7 +71,7 @@ variable "app_vnet_address_space" {
 }
 
 
-        
+
 # SUBNET VARIABLES
 variable "gateway_subnet_prefix" {
   description = "Address prefix for GatewaySubnet"

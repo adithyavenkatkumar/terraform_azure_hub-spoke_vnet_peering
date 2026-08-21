@@ -1,5 +1,5 @@
 
-        
+
 # RESOURCE GROUP OUTPUTS
 output "resource_group_ids" {
   description = "IDs of all Resource Groups"
@@ -20,7 +20,7 @@ output "resource_group_locations" {
 }
 
 
-        
+
 # VNET OUTPUTS
 output "virtual_network_ids" {
   description = "IDs of all Virtual Networks"
@@ -35,7 +35,7 @@ output "virtual_network_names" {
 }
 
 
-        
+
 # SUBNET OUTPUTS
 output "subnet_ids" {
   description = "IDs of all subnets"
@@ -50,7 +50,7 @@ output "subnet_names" {
 }
 
 
-        
+
 # VNET PEERING OUTPUTS
 output "peering_ids" {
   description = "IDs of all VNet peerings"
