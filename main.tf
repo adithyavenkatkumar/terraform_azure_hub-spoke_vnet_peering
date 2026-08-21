@@ -1,8 +1,6 @@
 
 
 # RESOURCE GROUPS
-
-
 module "resource_groups" {
   source = "./modules/resource-group"
 
@@ -27,8 +25,6 @@ module "resource_groups" {
 
    
 # VIRTUAL NETWORKS
-   
-
 module "vnets" {
   source = "./modules/vnet"
 
@@ -63,8 +59,6 @@ module "vnets" {
 
    
 # SUBNETS
-   
-
 module "subnets" {
   source = "./modules/subnet"
 
@@ -106,17 +100,13 @@ module "subnets" {
 
    
 # VNET PEERINGS
-   
-
 module "vnet_peering" {
   source = "./modules/peering"
 
   vnet_peerings = {
 
          
-    # Hub → Web
-         
-
+    # Hub → Web   
     hub_to_web = {
       vnet_peering_name         = "hub-to-web"
       resource_group_name       = module.resource_groups.resource_group_names["hub"]
@@ -132,8 +122,6 @@ module "vnet_peering" {
 
          
     # Web → Hub
-         
-
     web_to_hub = {
       vnet_peering_name         = "web-to-hub"
       resource_group_name       = module.resource_groups.resource_group_names["web"]
@@ -149,8 +137,6 @@ module "vnet_peering" {
 
          
     # Hub → App
-         
-
     hub_to_app = {
       vnet_peering_name         = "hub-to-app"
       resource_group_name       = module.resource_groups.resource_group_names["hub"]
@@ -166,8 +152,6 @@ module "vnet_peering" {
 
          
     # App → Hub
-         
-
     app_to_hub = {
       vnet_peering_name         = "app-to-hub"
       resource_group_name       = module.resource_groups.resource_group_names["app"]
